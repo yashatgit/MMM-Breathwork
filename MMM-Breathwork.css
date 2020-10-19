@@ -1,0 +1,36 @@
+#MMM-Breathwork-outer-cir {
+  background-color: rgb(60, 60, 60);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#MMM-Breathwork-inner-cir {
+  visibility: hidden;
+  height: 30%;
+  width: 30%;
+  border-radius: 50%;
+  background-color: rgb(31, 31, 31);
+  transition: height 5.5s ease-in-out, width 5.5s ease-in-out;
+  filter: blur(1px);
+}
+
+#MMM-Breathwork-inner-cir[data-mode="exhale"] {
+  visibility: visible;
+  height: 30%;
+  width: 30%;
+}
+
+#MMM-Breathwork-inner-cir[data-mode="inhale"] {
+  visibility: visible;
+  height: 95%;
+  width: 95%;
+}
+
+#MMM-Breathwork-cir-txt {
+  font-size: 14px;
+  position: absolute;
+}
